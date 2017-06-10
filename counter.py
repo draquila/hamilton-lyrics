@@ -2,6 +2,7 @@
 import argparse
 
 def proc(infile):
+    rows = []
     columns = []
     curr_column = []
     with open(infile) as f:
@@ -11,8 +12,26 @@ def proc(infile):
                 line = line.replace('%', '').strip()
                 columns.append(list(curr_column))
                 curr_column = []
+            if line.startswith('#'):
+                line = line.replace('#', '').strip()
+                columns.append(list(curr_column))
+                rows.append(list(columns))
+                columns = []
+                curr_column = []
             curr_column.append(line)
         columns.append(list(curr_column))
+        rows.append(list(columns))
+
+    # unify rows
+    unified_columns = []
+    for row in rows:
+        for (i, col) in enumerate(row):
+            try:
+                unified_columns[i] += col
+            except IndexError:
+                unified_columns.append(col)
+
+    columns = unified_columns
     max_widths = [ max([ len(line) for line in col ]) for col in columns ]
     max_rows = max([ len(col) for col in columns ])
 
