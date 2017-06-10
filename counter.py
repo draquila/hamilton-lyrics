@@ -46,7 +46,8 @@ def proc(infile):
                 val = ''
             padding = width + 3 - len(val)
             r += val
-            r += ' ' * padding
+            if j < len(columns) - 1:
+                r += ' ' * padding
 
         s.append(r)
     print '\n'.join(s)
