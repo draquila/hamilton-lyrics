@@ -18,12 +18,10 @@ Lyrics are number-coded for the singers.
 | 1 | Justin | Hamilton (1/2) |
 | 2 | Jason | Hamilton (2/2) |
 | 3 | Ian | Burr |
-| 4 | James | Lafayette/Jefferson |
-| 5 | Philippa | Laurens/Philip |
-| 6 | Grace | Mulligan/Madison |
+| 4 | James | Lafayette, Jefferson |
+| 5 | Philippa | Laurens, Philip |
+| 6 | Grace | Mulligan, Madison |
 | 7 | Michelle | Washington, Eliza |
-| 8 | Judith | Angelica |
-| 9 | Karen | King George, Samuel Seabury |
-| 10 | Fiona | James Reynolds, Martha Washington |
-| 11 | Sharon | Charles Lee, Dolly |
-| 5-11 | All girls | Maria Reynolds |
+| 8 | Judith | Angelica, Charles Lee |
+| 9 | Karen | King George, Samuel Seabury, Peggy |
+| 5-9 | All girls | Maria Reynolds |
